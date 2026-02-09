@@ -1,10 +1,15 @@
-# PyPSA Statistics Training
+# PyPSA Training Sessions
+
+This repo serves as a collection point for different PyPSA training sessions. It is organized into several notebooks, each focusing on a specific aspect of PyPSA.
+
+
+## 1. PyPSA Statistics Training (40 min)
 
 A guided ~40-min Jupyter notebook session exploring `n.statistics` — PyPSA's high-level API for querying costs, capacities, energy flows, and market metrics from optimized networks.
 
 Uses `pypsa.examples.carbon_management()`, a sector-coupled European energy system from a [Nature Energy paper](https://www.nature.com/articles/s41560-025-01752-6) on H₂/CO₂ network strategies (2164 buses, 89 carriers, 20 days at 3h resolution).
 
-## Topics Covered
+### Topics Covered
 
 | Category | Methods |
 |---|---|

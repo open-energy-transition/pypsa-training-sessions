@@ -211,6 +211,15 @@ wheels = [
 ]
 
 [[package]]
+name = "catppuccin-jupyterlab"
+version = "0.2.4"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d9/be/6d273956a87b542ad3e3e7def265ff564308059c4d15917808c9526ba341/catppuccin_jupyterlab-0.2.4.tar.gz", hash = "sha256:6bdb0129c220296b81b8ef82e29c61b8213c13a82a86849d8ded2b41f9a29024", size = 1185233, upload-time = "2024-08-15T12:46:03.591Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0e/da/a844d1c2962342ba0743aa699b67bbe373511cafae5269a3d907ad73418b/catppuccin_jupyterlab-0.2.4-py3-none-any.whl", hash = "sha256:643839b1c46e93e497beb95e741d40dd585fc4e489a44c2c6ce89a869a9cef67", size = 21720, upload-time = "2024-08-15T12:45:57.362Z" },
+]
+
+[[package]]
 name = "certifi"
 version = "2026.1.4"
 source = { registry = "https://pypi.org/simple" }
@@ -2612,6 +2621,7 @@ name = "pypsa-statistics-training"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "catppuccin-jupyterlab" },
     { name = "jupyter" },
     { name = "jupyterlab-execute-time" },
     { name = "jupyterlab-hide-code" },
@@ -2629,6 +2639,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "catppuccin-jupyterlab" },
     { name = "jupyter" },
     { name = "jupyterlab-execute-time" },
     { name = "jupyterlab-hide-code" },

@@ -12,6 +12,7 @@ dependencies = [
     "jupyterlab-myst",
     "jupyterlab-execute-time",
     "jupyterlab-hide-code",
+    "catppuccin-jupyterlab",
 ]
 
 [project.optional-dependencies]

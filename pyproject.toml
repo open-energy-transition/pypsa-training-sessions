@@ -9,6 +9,9 @@ dependencies = [
     "matplotlib",
     "pandas",
     "plotly",
+    "jupyterlab-myst",
+    "jupyterlab-execute-time",
+    "jupyterlab-hide-code",
 ]
 
 [project.optional-dependencies]

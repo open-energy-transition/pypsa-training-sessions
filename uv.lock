@@ -988,7 +988,7 @@ name = "importlib-metadata"
 version = "8.7.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "zipp", marker = "python_full_version < '3.14'" },
+    { name = "zipp", marker = "python_full_version < '3.13'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/f3/49/3b30cad09e7771a4982d9975a8cbf64f00d4a1ececb53297f1d9a7be1b10/importlib_metadata-8.7.1.tar.gz", hash = "sha256:49fef1ae6440c182052f407c8d34a68f72efc36db9ca90dc0113398f2fdde8bb", size = 57107, upload-time = "2025-12-21T10:00:19.278Z" }
 wheels = [
@@ -1333,6 +1333,39 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/3e/76/393eae3349f9a39bf21f8f5406e5244d36e2bfc932049b6070c271f92764/jupyterlab-4.5.3.tar.gz", hash = "sha256:4a159f71067cb38e4a82e86a42de8e7e926f384d7f2291964f282282096d27e8", size = 23939231, upload-time = "2026-01-23T15:04:25.768Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/9e/9a/0bf9a7a45f0006d7ff4fdc4fc313de4255acab02bf4db1887c65f0472c01/jupyterlab-4.5.3-py3-none-any.whl", hash = "sha256:63c9f3a48de72ba00df766ad6eed416394f5bb883829f11eeff0872302520ba7", size = 12391761, upload-time = "2026-01-23T15:04:21.214Z" },
+]
+
+[[package]]
+name = "jupyterlab-execute-time"
+version = "3.3.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "jupyterlab" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/4a/19/0458b8602b61c802c4c9ab0ee84776b7f1ea7bb5efb602692a1b91badc89/jupyterlab_execute_time-3.3.0.tar.gz", hash = "sha256:900fd1aebbfd3d943d3625eef973eed555bb2745d49840402783959c8a1dfc3a", size = 191870, upload-time = "2025-12-23T15:51:50.925Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ad/2d/96861673abb8e9336b74568bd920d9e3e61c911e2fba4bcfa7d10e8dd919/jupyterlab_execute_time-3.3.0-py3-none-any.whl", hash = "sha256:ed246db4d25c2fdbf2825206203d9d12251ebb38d46eb17ce0e11d271b2738f7", size = 45630, upload-time = "2025-12-23T15:51:49.537Z" },
+]
+
+[[package]]
+name = "jupyterlab-hide-code"
+version = "4.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f2/3a/b590f10575291e53d432057d12e79b6f64875e359f9a6db368583e26bc34/jupyterlab_hide_code-4.0.0.tar.gz", hash = "sha256:ec049d886ba8ba77d5471a3dcd5f65b3e7fefc1b460da556d845568d32aebe3e", size = 167798, upload-time = "2024-05-28T08:24:16.211Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/6f/37/83e6d621a8f14af0db1c71ed8d82d1032097bd1618cb836eeab86b8e17f1/jupyterlab_hide_code-4.0.0-py3-none-any.whl", hash = "sha256:68c568027ee1a9225408149e51c525499e7f84182e24b639de0344038e97ee48", size = 45273, upload-time = "2024-05-28T08:24:10.797Z" },
+]
+
+[[package]]
+name = "jupyterlab-myst"
+version = "2.6.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "jupyter-server", marker = "sys_platform != 'emscripten'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/04/91/63e3c2c54c707050c9844563c810829a8834fecd0b6b2c3506c2d7dd6995/jupyterlab_myst-2.6.0.tar.gz", hash = "sha256:1502e776153a43588eeb26ce04fb20a0a401805e20edbc57090c9ac932bd42e0", size = 12941853, upload-time = "2025-12-14T20:59:30.685Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5c/70/f0563af672535bbecc96071ef1ade96f37433e68645a6ea45973dc07c915/jupyterlab_myst-2.6.0-py3-none-any.whl", hash = "sha256:9a0e0ffb318798998be91b7303ffca8a5f15c29bcf339c968c0c3edbc1926265", size = 2710158, upload-time = "2025-12-14T20:59:27.514Z" },
 ]
 
 [[package]]
@@ -2580,6 +2613,9 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "jupyter" },
+    { name = "jupyterlab-execute-time" },
+    { name = "jupyterlab-hide-code" },
+    { name = "jupyterlab-myst" },
     { name = "matplotlib" },
     { name = "pandas" },
     { name = "plotly" },
@@ -2594,6 +2630,9 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "jupyter" },
+    { name = "jupyterlab-execute-time" },
+    { name = "jupyterlab-hide-code" },
+    { name = "jupyterlab-myst" },
     { name = "matplotlib" },
     { name = "pandas" },
     { name = "plotly" },

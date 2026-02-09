@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.ipynb_checkpoints/
+.venv/
+*.pyc
+.pytest_cache/
+pypsa-repo-ref/

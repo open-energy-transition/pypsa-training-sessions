@@ -20,6 +20,21 @@ Uses `pypsa.examples.carbon_management()`, a sector-coupled European energy syst
 | **Groupby & Filtering** | `groupby`, `groupby_time`, `components`, `carrier`, custom groupers |
 | **Plotting** | `.plot.bar()`, `.iplot.area()`, and more |
 
+## 2. Statistics Plotting (40 min)
+
+A follow-up ~40-min notebook on the `.plot` (matplotlib/seaborn) and `.iplot` (plotly) accessors that every `n.statistics.<method>` exposes. Same `carbon_management()` network as session 1.
+
+### Topics Covered
+
+| Category | Details |
+|---|---|
+| **`.plot` vs `.iplot`** | backend comparison, supported plot types |
+| **Bar / Line / Area** | horizontal/stacked bars, time-series lines, stacked dispatch areas |
+| **Filtering & Layout** | `carrier`, `bus_carrier`, `query`, `x`/`y`/`color`/`facet_col`/`facet_row` |
+| **Extra kwargs** | sizing (`height`, `aspect`, `width`), faceting (`facet_col_wrap`), labels, titles |
+| **Drop to axes** | unpacking `(fig, ax, g)` / plotly `Figure` for post-hoc customization |
+| **Spatial maps** | `.plot.map` — bus circles, branch widths, flow arrows, split half-circles, legend control |
+
 ## Setup
 
 ```bash
@@ -29,7 +44,8 @@ uv sync
 ## Run
 
 ```bash
-uv run jupyter lab notebooks/pypsa_statistics.ipynb
+uv run jupyter lab notebooks/pypsa_statistics.ipynb        # session 1
+uv run jupyter lab notebooks/pypsa_statistics_plotting.ipynb  # session 2
 ```
 
 ## Test

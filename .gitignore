@@ -11,4 +11,5 @@ build/
 *.pyc
 .pytest_cache/
 pypsa-repo-ref/
+dev/
 CLAUDE.md
